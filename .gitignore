@@ -1,0 +1,9 @@
+#doxygen
+docs/
+doxygen/
+Doxyfile
+
+#clion
+.idea/
+cmake-build-debug/
+CMakeLists.txt
