@@ -89,12 +89,12 @@ item get_first(list l) {
  * @param[in] l The list in which to insert the item
  * @param[in] i The item to insert
  * @param[in] index The position where to insert the item
- * @return -1 If the list l is NULL (not allocated) or it is empty
+ * @return -1 If the list l is NULL (not allocated)
  * @return 0 If the index parameter is out of bounds
  * @return 1 If the operation was successful
  * */
 int insert(list l, item i, int index) {
-    if (!l || l->size == 0) return -1;
+    if (!l) return -1;
     if (index == 0) {
         struct node *n = insert_ontop(l->first, i);
         l->size++;
