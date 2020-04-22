@@ -7,3 +7,4 @@ typedef int item;
 int equals(item, item);
 void input_item(item *);
 void output_item(item);
+item clone_item(item i);

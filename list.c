@@ -212,7 +212,7 @@ list clone_list(list l) {
     if (!new) return NULL;
 
     new->first = malloc(sizeof(struct node));
-    new->first->val = l->first->val;
+    new->first->val = clone_item(l->first->val);
     new->size = l->size;
 
     struct node *p = l->first;
@@ -223,7 +223,7 @@ list clone_list(list l) {
         if (!p) break;
         p_n = tail_list(p_n);
         p_n = malloc(sizeof(struct node));
-        p_n->val = p->val;
+        p_n->val = clone_item(p->val);
         p_before->next = p_n;
         p_before = tail_list(p_before);
     }
@@ -244,7 +244,7 @@ list reverse_list(list l) {
     if (!new_reverse) return NULL;
 
     new_reverse->first = malloc(sizeof(struct node));
-    new_reverse->first->val = l->first->val;
+    new_reverse->first->val = clone_item(l->first->val);
     new_reverse->size = l->size;
 
     struct node *p = l->first;
@@ -252,7 +252,7 @@ list reverse_list(list l) {
 
     for (int i = 0; i < l->size-1; i++) {
         p = tail_list(p);
-        n = insert_ontop(n, p->val);
+        n = insert_ontop(n, clone_item(p->val));
     }
     new_reverse->first = n;
     return new_reverse;
