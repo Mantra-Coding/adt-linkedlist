@@ -1,9 +1,15 @@
+<h1 align="center">adt-linkedlist</h1>
 
-# adt-linkedlist
-![GitHub issues](https://img.shields.io/github/issues/mantra-coding/adt-linkedlist?style=for-the-badge) ![GitHub](https://img.shields.io/github/license/mantra-coding/adt-linkedlist?color=%23ff6e40&style=for-the-badge)
+<p align="center">
+	<a href="https://github.com/Mantra-Coding/adt-linkedlist/issues" alt="Issues">
+        <img src="https://img.shields.io/github/issues/mantra-coding/adt-linkedlist" /></a>
+	<a href="#"><img src="https://img.shields.io/github/license/mantra-coding/adt-linkedlist?" /></a>
+	<a href="#"><img src="https://github.com/Mantra-Coding/adt-linkedlist/workflows/C%20CI/badge.svg"/></a>
+</p>
+
 
 **An Abstract-Data-Structure representing a Linked List in C.** 
-Defining new data-structures in C can be long and complex. This module gives you the opportunity to use a Linked List in your projects through several operators to create a list, insert and remove items and more... ([refer to the docs](https://mantra-coding.github.io/adt-linkedlist)).
+Defining new data-structures in C can take a lot time and be kind of complex. This module gives you a Linked List which is straightaway ready to be used in your projects, through several operators to create a list, insert and remove items and more... ([docs](https://mantra-coding.github.io/adt-linkedlist)).
 ## Usage
 Clone the repo with `git clone` and move the files to your workspace, then include `list.h` into your source code like so:
 ```c
@@ -13,7 +19,7 @@ After doing this you can start using the operators.
 To store your own data types in the list edit `item.c` to reflect the correct assignments and operations for the data you want to store (do not remove or rename the defaults operators, just edit them to reflect the operations for your type).  In the following example we are printing all the items (int) stored in the list.
 ### Example
 ```c
-list.c
+/*========================== list.c ==========================*/
 
 #include "list.h"
 
@@ -26,7 +32,7 @@ int main() {
 	}
 }	
 
-item.c
+/*========================== item.c ==========================*/
 
 #include <stdio.h>
 #include <stdlib.h>
