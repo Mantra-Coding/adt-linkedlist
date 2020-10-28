@@ -19,7 +19,7 @@ After doing this you can start using the operators.
 To store your own data types in the list edit `item.c` to reflect the correct assignments and operations for the data you want to store (do not remove or rename the defaults operators, just edit them to reflect the operations for your type).  In the following example we are printing all the items (int) stored in the list.
 ### Example
 ```c
-/*========================== list.c ==========================*/
+/*========================== main.c ==========================*/
 
 #include "list.h"
 
